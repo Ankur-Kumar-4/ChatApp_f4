@@ -1,0 +1,143 @@
+nav{
+    position: sticky !important;
+    top: 0 !important;
+    /* z-index: 2000 !important; */
+}
+body{
+    background-color: #0f2132 !important;
+}
+.form{
+    margin: auto;
+    width: 45%;
+    margin-top: 17vh;
+    box-shadow: 2px 2px 20px #1998e6;
+    animation: colorChange 10s infinite ease;
+    background-color: #30373d !important;
+    color: #fff;
+}
+
+.custom{
+    margin-left: 30px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.hide{
+    display: none !important;
+}
+
+.messages{
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #0f2132;
+    overflow-y: scroll;
+    padding-bottom: 50px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+.message{
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 20px;
+    width: fit-content;
+    border-radius: 15px;
+    max-width: 300px;
+}
+.send{
+    align-self: flex-end;
+    background-color: #1998e6;
+	color: #fff;
+	
+}
+
+.received{
+    background-color: #ddd;
+}
+
+
+
+.messageInput{
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+padding: 20px 20px;
+position: fixed;
+bottom: 0;
+background-color: #0f2132;
+}
+#message_input{
+width: 80vw;
+border: none;
+border-radius: 20px;
+padding: 12px;
+outline: none;
+background-color: #30373d;
+box-shadow: 2px 2px 20px #1998e6;
+animation: colorChange 10s infinite ease;
+color: #fff;
+}
+::placeholder{
+    color: #fff;
+    opacity: 0.5;
+}
+.wrap{
+   position: relative;
+   left: 25px;
+   width: fit-content;
+  
+}
+#messageBtnSend{
+border: none;
+position: relative;
+right: 59px;
+border-radius: 20px;
+padding: 12px;
+width: 70px;
+background-color: #1998e6;
+color:#fff;
+font-weight: 500;
+
+}
+
+@keyframes colorChange {
+    0% {
+      box-shadow: 2px 2px 20px rgba(52, 152, 219, 0.5);
+    }
+    25%{
+      box-shadow: 2px 2px 20px rgba(29, 239, 5, 0.852);
+    }
+    50% {
+      box-shadow: 2px 2px 20px rgba(246, 58, 6, 0.869);
+    }
+    75%{
+      box-shadow: 2px 2px 20px rgba(228, 9, 195, 0.935);
+    }
+    100% {
+      box-shadow: 2px 2px 20px rgba(226, 251, 0, 0.82);
+    }
+  }
+
+
+@media (max-width: 724px) {
+    
+
+    .form{
+        width: 80%;
+    }
+    .custom{
+        margin-left: 0;
+        font-size: 15px;
+    }
+    .messages{
+        height: 162vw;
+    }
+    .messageInput{
+        padding: 25px 20px;   
+    }
+}
+
